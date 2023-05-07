@@ -6,7 +6,7 @@
 /*   By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 17:19:58 by kglebows          #+#    #+#             */
-/*   Updated: 2023/05/07 18:28:09 by kglebows         ###   ########.fr       */
+/*   Updated: 2023/05/07 20:06:15 by kglebows         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_countnumbersu(unsigned int n)
 	int	i;
 
 	i = 0;
+	if (n < 0)
+		return (-1);
 	if (n == 0)
 		return (1);
 	while (n != 0)
