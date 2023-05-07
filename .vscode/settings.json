@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"__locale": "c",
+		"chrono": "c",
+		"libftprintf.h": "c",
+		"ostream": "c",
+		"ft_printf.h": "c"
+	}
+}
