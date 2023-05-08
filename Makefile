@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/08 12:46:56 by kglebows          #+#    #+#              #
+#    Updated: 2023/05/08 12:47:47 by kglebows         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libftprintf.a
 LIBFTNAME = libft.a
 CC = cc
@@ -33,3 +45,8 @@ fclean: clean
 	@cd $(LIBFTDIR) && make fclean
 	
 re: fclean all
+
+norm: $(SRCS)
+	$(shell norminette | grep Error)
+
+.PHONY: all clean fclean norm re
