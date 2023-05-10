@@ -6,7 +6,7 @@
 /*   By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 19:48:32 by kglebows          #+#    #+#             */
-/*   Updated: 2023/05/07 20:03:50 by kglebows         ###   ########.fr       */
+/*   Updated: 2023/05/10 15:39:29 by kglebows         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ ssize_t	ft_printf_spec(va_list va, char str)
 	else if (str == 'X')
 		printed = ft_printf_x(va_arg(va, unsigned int), 1);
 	else if (str == '%')
-		printed = write(1, "%", 1);
+		printed = ft_printf_c('%');
 	return (printed);
 }
 

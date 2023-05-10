@@ -6,24 +6,17 @@
 #    By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/08 12:46:56 by kglebows          #+#    #+#              #
-#    Updated: 2023/05/08 12:47:47 by kglebows         ###   ########.fr        #
+#    Updated: 2023/05/10 15:42:06 by kglebows         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 LIBFTNAME = libft.a
+LIBFTDIR = ./libft
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-LIBFTDIR = ./libft
-
-SRCS = 	ft_printf.c \
-		ft_printf_c.c \
-		ft_printf_n.c \
-		ft_printf_p.c \
-		ft_printf_s.c \
-		ft_printf_x.c \
-		ft_printf_u.c
-
+SRCS = 	ft_printf.c ft_printf_c.c ft_printf_n.c ft_printf_p.c ft_printf_s.c \
+		ft_printf_x.c ft_printf_u.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)

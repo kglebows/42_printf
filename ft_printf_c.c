@@ -6,7 +6,7 @@
 /*   By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 17:19:58 by kglebows          #+#    #+#             */
-/*   Updated: 2023/05/03 18:54:41 by kglebows         ###   ########.fr       */
+/*   Updated: 2023/05/10 15:37:56 by kglebows         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int	ft_printf_c(char c)
 {
-	int	ret;
-
-	ret = write(1, &c, 1);
-	return (ret);
+	return (write(1, &c, 1));
 }
