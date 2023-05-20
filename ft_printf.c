@@ -6,7 +6,7 @@
 /*   By: kglebows <kglebows@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 19:48:32 by kglebows          #+#    #+#             */
-/*   Updated: 2023/05/20 14:06:19 by kglebows         ###   ########.fr       */
+/*   Updated: 2023/05/20 14:09:23 by kglebows         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ ssize_t	ft_printf_spec(va_list va, char str)
 		printed = ft_printf_c('%');
 	return (printed);
 }
-g
+
 int	ft_printf(const char *str, ...)
 {
 	va_list	va;
